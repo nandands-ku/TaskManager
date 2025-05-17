@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "D:\\Personal\\Repository\\TaskManager\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5C34EB3E-86AC-4182-B275-124A2493A15D}|TaskManager.Infrastructure\\TaskManager.Infrastructure.csproj|d:\\personal\\repository\\taskmanager\\taskmanager.infrastructure\\repository\\query\\userqueryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C34EB3E-86AC-4182-B275-124A2493A15D}|TaskManager.Infrastructure\\TaskManager.Infrastructure.csproj|solutionrelative:taskmanager.infrastructure\\repository\\query\\userqueryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{98F9E63B-7028-4228-96E8-1C6DE55B5A00}|TaskManager.Application\\TaskManager.Application.csproj|d:\\personal\\repository\\taskmanager\\taskmanager.application\\commands\\user\\createusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98F9E63B-7028-4228-96E8-1C6DE55B5A00}|TaskManager.Application\\TaskManager.Application.csproj|solutionrelative:taskmanager.application\\commands\\user\\createusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{003F84BB-ADC4-4492-8405-B83AAF3E473E}|TaskManager.API\\TaskManager.API.csproj|d:\\personal\\repository\\taskmanager\\taskmanager.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{003F84BB-ADC4-4492-8405-B83AAF3E473E}|TaskManager.API\\TaskManager.API.csproj|solutionrelative:taskmanager.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{98F9E63B-7028-4228-96E8-1C6DE55B5A00}|TaskManager.Application\\TaskManager.Application.csproj|d:\\personal\\repository\\taskmanager\\taskmanager.application\\handlers\\commadhandlers\\loginusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{98F9E63B-7028-4228-96E8-1C6DE55B5A00}|TaskManager.Application\\TaskManager.Application.csproj|solutionrelative:taskmanager.application\\handlers\\commadhandlers\\loginusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5C34EB3E-86AC-4182-B275-124A2493A15D}|TaskManager.Infrastructure\\TaskManager.Infrastructure.csproj|d:\\personal\\repository\\taskmanager\\taskmanager.infrastructure\\repository\\command\\usercommandrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C34EB3E-86AC-4182-B275-124A2493A15D}|TaskManager.Infrastructure\\TaskManager.Infrastructure.csproj|solutionrelative:taskmanager.infrastructure\\repository\\command\\usercommandrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5C34EB3E-86AC-4182-B275-124A2493A15D}|TaskManager.Infrastructure\\TaskManager.Infrastructure.csproj|d:\\personal\\repository\\taskmanager\\taskmanager.infrastructure\\repository\\query\\userqueryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C34EB3E-86AC-4182-B275-124A2493A15D}|TaskManager.Infrastructure\\TaskManager.Infrastructure.csproj|solutionrelative:taskmanager.infrastructure\\repository\\query\\userqueryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{003F84BB-ADC4-4492-8405-B83AAF3E473E}|TaskManager.API\\TaskManager.API.csproj|d:\\personal\\repository\\taskmanager\\taskmanager.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{003F84BB-ADC4-4492-8405-B83AAF3E473E}|TaskManager.API\\TaskManager.API.csproj|solutionrelative:taskmanager.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5C34EB3E-86AC-4182-B275-124A2493A15D}|TaskManager.Infrastructure\\TaskManager.Infrastructure.csproj|d:\\personal\\repository\\taskmanager\\taskmanager.infrastructure\\repository\\command\\usercommandrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C34EB3E-86AC-4182-B275-124A2493A15D}|TaskManager.Infrastructure\\TaskManager.Infrastructure.csproj|solutionrelative:taskmanager.infrastructure\\repository\\command\\usercommandrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{003F84BB-ADC4-4492-8405-B83AAF3E473E}|TaskManager.API\\TaskManager.API.csproj|d:\\personal\\repository\\taskmanager\\taskmanager.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -91,19 +95,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "CreateUserCommand.cs",
+              "DocumentMoniker": "D:\\Personal\\Repository\\TaskManager\\TaskManager.Application\\Commands\\User\\CreateUserCommand.cs",
+              "RelativeDocumentMoniker": "TaskManager.Application\\Commands\\User\\CreateUserCommand.cs",
+              "ToolTip": "D:\\Personal\\Repository\\TaskManager\\TaskManager.Application\\Commands\\User\\CreateUserCommand.cs",
+              "RelativeToolTip": "TaskManager.Application\\Commands\\User\\CreateUserCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T10:14:27.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "UserQueryRepository.cs",
               "DocumentMoniker": "D:\\Personal\\Repository\\TaskManager\\TaskManager.Infrastructure\\Repository\\Query\\UserQueryRepository.cs",
               "RelativeDocumentMoniker": "TaskManager.Infrastructure\\Repository\\Query\\UserQueryRepository.cs",
               "ToolTip": "D:\\Personal\\Repository\\TaskManager\\TaskManager.Infrastructure\\Repository\\Query\\UserQueryRepository.cs",
               "RelativeToolTip": "TaskManager.Infrastructure\\Repository\\Query\\UserQueryRepository.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAABUAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-17T10:08:50.848Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "TeamValidator.cs",
               "DocumentMoniker": "D:\\Personal\\Repository\\TaskManager\\TaskManager.API\\Validators\\TeamValidator.cs",
               "RelativeDocumentMoniker": "TaskManager.API\\Validators\\TeamValidator.cs",
@@ -116,7 +133,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "UserValidator.cs",
               "DocumentMoniker": "D:\\Personal\\Repository\\TaskManager\\TaskManager.API\\Validators\\UserValidator.cs",
               "RelativeDocumentMoniker": "TaskManager.API\\Validators\\UserValidator.cs",
@@ -129,7 +146,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "TeamCommandRepository.cs",
               "DocumentMoniker": "D:\\Personal\\Repository\\TaskManager\\TaskManager.Infrastructure\\Repository\\Command\\TeamCommandRepository.cs",
               "RelativeDocumentMoniker": "TaskManager.Infrastructure\\Repository\\Command\\TeamCommandRepository.cs",
@@ -142,7 +159,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "GlobalEnum.cs",
               "DocumentMoniker": "D:\\Personal\\Repository\\TaskManager\\TaskManager.Core\\Enum\\GlobalEnum.cs",
               "RelativeDocumentMoniker": "TaskManager.Core\\Enum\\GlobalEnum.cs",
@@ -155,7 +172,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Team.cs",
               "DocumentMoniker": "D:\\Personal\\Repository\\TaskManager\\TaskManager.Core\\Entities\\Team.cs",
               "RelativeDocumentMoniker": "TaskManager.Core\\Entities\\Team.cs",
@@ -168,7 +185,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Task.cs",
               "DocumentMoniker": "D:\\Personal\\Repository\\TaskManager\\TaskManager.Core\\Entities\\Task.cs",
               "RelativeDocumentMoniker": "TaskManager.Core\\Entities\\Task.cs",
@@ -181,7 +198,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "UserController.cs",
               "DocumentMoniker": "D:\\Personal\\Repository\\TaskManager\\TaskManager.API\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "TaskManager.API\\Controllers\\UserController.cs",
@@ -194,20 +211,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "AuthController.cs",
               "DocumentMoniker": "D:\\Personal\\Repository\\TaskManager\\TaskManager.API\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "TaskManager.API\\Controllers\\AuthController.cs",
               "ToolTip": "D:\\Personal\\Repository\\TaskManager\\TaskManager.API\\Controllers\\AuthController.cs",
               "RelativeToolTip": "TaskManager.API\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAowBEAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAowB0AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-17T08:48:39.652Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Personal\\Repository\\TaskManager\\TaskManager.API\\Program.cs",
               "RelativeDocumentMoniker": "TaskManager.API\\Program.cs",
@@ -220,7 +237,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Personal\\Repository\\TaskManager\\TaskManager.API\\appsettings.json",
               "RelativeDocumentMoniker": "TaskManager.API\\appsettings.json",
@@ -233,7 +250,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "TokenService.cs",
               "DocumentMoniker": "D:\\Personal\\Repository\\TaskManager\\TaskManager.API\\Providers\\TokenService.cs",
               "RelativeDocumentMoniker": "TaskManager.API\\Providers\\TokenService.cs",
@@ -246,7 +263,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "LoginUserResponse.cs",
               "DocumentMoniker": "D:\\Personal\\Repository\\TaskManager\\TaskManager.Application\\Response\\LoginUserResponse.cs",
               "RelativeDocumentMoniker": "TaskManager.Application\\Response\\LoginUserResponse.cs",
@@ -259,7 +276,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\Personal\\Repository\\TaskManager\\TaskManager.Core\\Entities\\User.cs",
               "RelativeDocumentMoniker": "TaskManager.Core\\Entities\\User.cs",
@@ -272,7 +289,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "LoginUserCommand.cs",
               "DocumentMoniker": "D:\\Personal\\Repository\\TaskManager\\TaskManager.Application\\Commands\\User\\LoginUserCommand.cs",
               "RelativeDocumentMoniker": "TaskManager.Application\\Commands\\User\\LoginUserCommand.cs",
@@ -285,7 +302,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "UserCommandRepository.cs",
               "DocumentMoniker": "D:\\Personal\\Repository\\TaskManager\\TaskManager.Infrastructure\\Repository\\Command\\UserCommandRepository.cs",
               "RelativeDocumentMoniker": "TaskManager.Infrastructure\\Repository\\Command\\UserCommandRepository.cs",
@@ -298,7 +315,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "TaskManager.Infrastructure",
               "DocumentMoniker": "D:\\Personal\\Repository\\TaskManager\\TaskManager.Infrastructure\\TaskManager.Infrastructure.csproj",
               "RelativeDocumentMoniker": "TaskManager.Infrastructure\\TaskManager.Infrastructure.csproj",
@@ -311,7 +328,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "LoginUserCommandHandler.cs",
               "DocumentMoniker": "D:\\Personal\\Repository\\TaskManager\\TaskManager.Application\\Handlers\\CommadHandlers\\LoginUserCommandHandler.cs",
               "RelativeDocumentMoniker": "TaskManager.Application\\Handlers\\CommadHandlers\\LoginUserCommandHandler.cs",
@@ -324,7 +341,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "CreateUserCommandHandler.cs",
               "DocumentMoniker": "D:\\Personal\\Repository\\TaskManager\\TaskManager.Application\\Handlers\\CommadHandlers\\CreateUserCommandHandler.cs",
               "RelativeDocumentMoniker": "TaskManager.Application\\Handlers\\CommadHandlers\\CreateUserCommandHandler.cs",
