@@ -1,0 +1,17 @@
+/.vs/TaskManager/FileContentIndex
+/.vs/ProjectEvaluation/*.bin
+/TaskManager.API/*.user
+/TaskManager.API/bin/Debug/net8.0/*.dll
+/TaskManager.API/bin/Debug/net8.0
+/TaskManager.API/obj/Container
+/TaskManager.API/obj/Debug/net8.0
+/TaskManager.Application/bin/Debug/net8.0
+/TaskManager.Application/obj/Debug/net8.0
+/TaskManager.Application/obj
+/TaskManager.API/obj
+/TaskManager.Core/bin/Debug/net8.0
+/TaskManager.Core/obj/Debug/net8.0
+/TaskManager.Core/obj
+net8.0
+obj
+/.vs/TaskManager/v17/*.v2
