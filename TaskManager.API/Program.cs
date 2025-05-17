@@ -66,6 +66,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+app.UseExceptionHandler(hanlder =>
+hanlder.Run(async (context) => { await context.Response.WriteAsync("Internel Error"); }));
 
 app.UseHttpsRedirection();
 
