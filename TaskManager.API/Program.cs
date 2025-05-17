@@ -1,6 +1,9 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using Serilog;
 using System.Reflection;
+using System.Text;
 using TaskManager.Application.Handlers.CommadHandlers;
 using TaskManager.Core.Command;
 using TaskManager.Core.Command.Base;
@@ -9,6 +12,7 @@ using TaskManager.Core.Query.Base;
 using TaskManager.Infrastructure.Data;
 using TaskManager.Infrastructure.Repository.Command;
 using TaskManager.Infrastructure.Repository.Command.Base;
+using TaskManager.Infrastructure.Repository.Query;
 using TaskManager.Infrastructure.Repository.Query.Base;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -30,11 +34,23 @@ builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(Creat
 builder.Services.AddScoped(typeof(IQueryRepository<>), typeof(QueryBaseRepository<>));
 builder.Services.AddScoped(typeof(ICommandRepository<>), typeof(CommandBaseRepository<>));
 builder.Services.AddScoped<IUserCommandRepository, UserCommandRepository>();
-//builder.Services.AddScoped<IUserQueryRepository, UserQueryRepository>();
+builder.Services.AddScoped<IUserQueryRepository, UserQueryRepository>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("4f4658e05855c7ee06f88bed8f2b4f6634433923a426d8ee9e9048863d1ab1a6"))
+        };
+    });
+
 
 var app = builder.Build();
 

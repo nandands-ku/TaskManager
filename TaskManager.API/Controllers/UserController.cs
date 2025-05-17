@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using TaskManager.Application.Commands.User;
@@ -20,7 +21,8 @@ namespace TaskManager.API.Controllers
 
         [HttpPost]
         [ProducesResponseType(200)]
-        public async Task<CreateUserResponse> CreateCategory([FromBody] CreateUserCommand command)
+        //[Authorize(Roles = "Admin")]
+        public async Task<CreateUserResponse> CreateUser([FromBody] CreateUserCommand command)
         {
             _logger.LogInformation("Created User!");
 
