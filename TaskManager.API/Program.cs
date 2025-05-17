@@ -1,12 +1,16 @@
+using FluentValidation;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Serilog;
 using System.Reflection;
 using System.Text;
+using TaskManager.API.Validators;
+using TaskManager.Application.Commands.User;
 using TaskManager.Application.Handlers.CommadHandlers;
 using TaskManager.Core.Command;
 using TaskManager.Core.Command.Base;
+using TaskManager.Core.Entities;
 using TaskManager.Core.Query;
 using TaskManager.Core.Query.Base;
 using TaskManager.Infrastructure.Data;
@@ -35,6 +39,8 @@ builder.Services.AddScoped(typeof(IQueryRepository<>), typeof(QueryBaseRepositor
 builder.Services.AddScoped(typeof(ICommandRepository<>), typeof(CommandBaseRepository<>));
 builder.Services.AddScoped<IUserCommandRepository, UserCommandRepository>();
 builder.Services.AddScoped<IUserQueryRepository, UserQueryRepository>();
+
+builder.Services.AddScoped<IValidator<CreateUserCommand>, UserValidator>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
