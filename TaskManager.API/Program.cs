@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Serilog;
+using System;
 using System.Reflection;
 using System.Text;
 using TaskManager.API.Validators;
@@ -75,6 +76,14 @@ app.UseSerilogRequestLogging();
 
 app.UseAuthorization();
 
+
 app.MapControllers();
+
+// Auto-apply migrations
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<TaskManagerDBContext>();
+    dbContext.Database.Migrate();
+}
 
 app.Run();
