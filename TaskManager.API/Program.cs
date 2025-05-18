@@ -6,6 +6,7 @@ using Serilog;
 using System;
 using System.Reflection;
 using System.Text;
+using TaskManager.API.Providers;
 using TaskManager.API.Validators;
 using TaskManager.Application.Commands.User;
 using TaskManager.Application.Handlers.CommadHandlers;
@@ -42,22 +43,31 @@ builder.Services.AddScoped<IUserCommandRepository, UserCommandRepository>();
 builder.Services.AddScoped<IUserQueryRepository, UserQueryRepository>();
 
 builder.Services.AddScoped<IValidator<CreateUserCommand>, UserValidator>();
+builder.Services.AddTransient<TokenService>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+})
     .AddJwtBearer(options =>
     {
+        options.SaveToken = true;
         options.TokenValidationParameters = new TokenValidationParameters
         {
+            ValidateIssuer = false,
+            ValidateAudience = false,
             ValidateLifetime = true,
             ValidateIssuerSigningKey = true,
-            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("4f4658e05855c7ee06f88bed8f2b4f6634433923a426d8ee9e9048863d1ab1a6"))
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
         };
     });
-
+builder.Services.AddAuthorization();
 
 var app = builder.Build();
 
@@ -67,17 +77,17 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-app.UseExceptionHandler(hanlder =>
-hanlder.Run(async (context) => { await context.Response.WriteAsync("Internel Error"); }));
 
 app.UseHttpsRedirection();
 
-app.UseSerilogRequestLogging();
-
+app.UseAuthentication();
 app.UseAuthorization();
 
-
 app.MapControllers();
+
+app.UseSerilogRequestLogging();
+app.UseExceptionHandler(hanlder =>
+hanlder.Run(async (context) => { await context.Response.WriteAsync("Internel Error"); }));
 
 // Auto-apply migrations
 using (var scope = app.Services.CreateScope())

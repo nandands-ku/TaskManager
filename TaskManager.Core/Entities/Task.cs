@@ -1,4 +1,5 @@
-﻿using TaskManager.Core.Entities.Base;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using TaskManager.Core.Entities.Base;
 
 namespace TaskManager.Core.Entities
 {
@@ -11,5 +12,13 @@ namespace TaskManager.Core.Entities
         public Guid CreatedByUserId { get; set; }
         public Guid TeamId { get; set; }
         public DateTime DueDate { get; set; }
+
+        [ForeignKey(nameof(TeamId))]
+        public virtual Team Team { get; set; } = default!;
+        [ForeignKey(nameof(CreatedByUserId))]
+        public virtual User CreatedByUser { get; set; } = default!;
+        [ForeignKey(nameof(AssignedToUserId))]
+        public virtual User AssignedToUser { get; set; } = default!;
+
     }
 }

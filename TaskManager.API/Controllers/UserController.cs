@@ -8,11 +8,13 @@ using Microsoft.AspNetCore.Mvc;
 using TaskManager.Application.Commands.User;
 using TaskManager.Application.Response;
 using TaskManager.Core.Entities;
+using TaskManager.Core.Enum;
 
 namespace TaskManager.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class UserController : ControllerBase
     {
         private readonly IMediator _mediator;
@@ -29,6 +31,7 @@ namespace TaskManager.API.Controllers
         [HttpPost]
         [ProducesResponseType(200)]
         //[Authorize(Roles = "Admin")]
+        [Authorize(Roles = nameof(UserRole.Admin))]
         public async Task<IActionResult> CreateUser([FromBody] CreateUserCommand command)
         {
             ValidationResult validationResult = await _validator.ValidateAsync(command);
